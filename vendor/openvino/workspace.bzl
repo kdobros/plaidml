@@ -25,8 +25,14 @@ def openvino_workspace():
 
     http_archive(
         name = "openvino",
+<<<<<<< HEAD
         sha256 = "d063141832cca74c9bd9baae21aca86b9d48a4980ecebcbfaf62bedac998385a",
         strip_prefix = "openvino-f03ef795f3064834a688b41125ae5d31c93df903",
         url = "https://github.com/PlaidML/openvino/archive/f03ef795f3064834a688b41125ae5d31c93df903.zip",
+=======
+        sha256 = "720c75cf6b0428ff20cbe5b3614a77e183211164b546c3b400b9465d303f35c8",
+        strip_prefix = "openvino-8277623accd6c416198a56d2e7734a7db843b140",
+        url = "https://github.com/PlaidML/openvino/archive/8277623accd6c416198a56d2e7734a7db843b140.zip",
+>>>>>>> Add MVN to OpenVINO plugin
         build_file = clean_dep("//vendor/openvino:openvino.BUILD"),
     )
